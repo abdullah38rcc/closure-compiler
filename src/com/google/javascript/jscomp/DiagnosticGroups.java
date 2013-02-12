@@ -243,6 +243,12 @@ public class DiagnosticGroups {
           CheckSuspiciousCode.SUSPICIOUS_SEMICOLON,
           CheckSuspiciousCode.SUSPICIOUS_COMPARISON_WITH_NAN);
 
+  public static final DiagnosticGroup LISKOV =
+      DiagnosticGroups.registerGroup("liskov",
+          TypeValidator.HIDDEN_PROPERTY_MISMATCH,
+          TypeValidator.HIDDEN_INTERFACE_PROPERTY_MISMATCH,
+          TypeCheck.HIDDEN_SUPERCLASS_PROPERTY_MISMATCH);
+
   /**
    * Adds warning levels by name.
    */
